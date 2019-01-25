@@ -1,8 +1,12 @@
 package com.shawn.sell.dataobject;
 
+import lombok.Data;
+import org.hibernate.annotations.DynamicUpdate;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import java.util.Date;
 
 /**
  * 类目
@@ -11,6 +15,8 @@ import javax.persistence.Id;
  * product_category
  */
 @Entity
+@DynamicUpdate  //动态更新
+@Data
 public class ProductCategory {
     //命名表中类名是下划线对应驼峰命名规则
     /**类目id */
@@ -22,36 +28,10 @@ public class ProductCategory {
    /** 类目编号*/
     private Integer categoryType;
 
-    public Integer getCategoryId() {
-        return categoryId;
-    }
 
-    public void setCategoryId(Integer categoryId) {
-        this.categoryId = categoryId;
-    }
-
-    public String getCategoryName() {
-        return categoryName;
-    }
-
-    public void setCategoryName(String categoryName) {
+    public  ProductCategory(String categoryName,Integer categoryType){
         this.categoryName = categoryName;
-    }
-
-    public Integer getCategoryType() {
-        return categoryType;
-    }
-
-    public void setCategoryType(Integer categoryType) {
         this.categoryType = categoryType;
     }
 
-    @Override
-    public String toString() {
-        return "ProductCategory{" +
-                "categoryId=" + categoryId +
-                ", categoryName='" + categoryName + '\'' +
-                ", categoryType=" + categoryType +
-                '}';
-    }
 }

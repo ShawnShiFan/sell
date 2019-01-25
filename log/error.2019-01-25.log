@@ -3536,3 +3536,5 @@ Caused by: org.hibernate.HibernateException: Access to DialectResolutionInfo can
 	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:94)
 	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263)
 	... 56 common frames omitted
+2019-01-25 21:52:59,925 - Duplicate entry '1' for key 'PRIMARY'
+2019-01-25 21:52:59,930 - HHH000346: Error during managed flush [org.hibernate.exception.ConstraintViolationException: could not execute statement]

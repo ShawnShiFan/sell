@@ -23,4 +23,10 @@ public class ProductCategoryRepositoryTest {
           ProductCategory productCategory =  repository.findById(1).get();
             System.out.println(productCategory.toString());
         }
+        @Test
+        public void saveTest(){
+            ProductCategory productCategory =  repository.findById(2).get();
+            productCategory.setCategoryType(3);
+            repository.save(productCategory);
+        }
 }
