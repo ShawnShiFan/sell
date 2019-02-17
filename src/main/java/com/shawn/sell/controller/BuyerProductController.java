@@ -7,6 +7,7 @@ import com.shawn.sell.dataobject.ProductCategory;
 import com.shawn.sell.dataobject.ProductInfo;
 import com.shawn.sell.service.CategoryService;
 import com.shawn.sell.service.ProductService;
+import com.shawn.sell.utils.ResultVOUtil;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -14,7 +15,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -71,13 +71,6 @@ public class BuyerProductController {
         }
 
 
-
-        ResultVO resultVO = new ResultVO();
-
-        resultVO.setCode(0);
-        resultVO.setMsg("成功");
-        resultVO.setData(productVOList);
-
-        return  resultVO;
+        return ResultVOUtil.success(productVOList);
     }
 }
