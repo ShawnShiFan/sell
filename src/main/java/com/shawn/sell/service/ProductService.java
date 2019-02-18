@@ -1,6 +1,7 @@
 package com.shawn.sell.service;
 
 import com.shawn.sell.dataobject.ProductInfo;
+import com.shawn.sell.dto.CartDTO;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
@@ -27,7 +28,8 @@ public interface ProductService {
     ProductInfo save(ProductInfo productInfo);
 
     //加库存
-
+    void increaseStock(List<CartDTO> cartDTOList);
 
     //减库存
+    void decreaseStock(List<CartDTO> cartDTOList);
 }

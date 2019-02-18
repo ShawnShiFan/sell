@@ -1,11 +1,7 @@
 package com.shawn.sell.dto;
 
 import com.shawn.sell.dataobject.OrderDetail;
-import com.shawn.sell.enums.OrderStatusEnum;
-import com.shawn.sell.enums.PayStatusEnum;
 import lombok.Data;
-
-import javax.persistence.Entity;
 import java.math.BigDecimal;
 import java.util.Date;
 import java.util.List;
@@ -15,7 +11,6 @@ import java.util.List;
  * @Author: Shawn
  * @Date: 2019/2/17 21:33
  */
-@Entity
 @Data
 public class OrderDTO {
     private String orderId;
