@@ -10,7 +10,6 @@ import javax.persistence.Id;
 import javax.persistence.Transient;
 import java.math.BigDecimal;
 import java.util.Date;
-import java.util.List;
 
 /**
  * @Author: Shawn
