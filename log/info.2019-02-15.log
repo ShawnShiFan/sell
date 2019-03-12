@@ -1,0 +1,53 @@
+2019-02-15 19:57:00,070 - Starting SellApplication on YLMF-1707182114 with PID 8200 (G:\springstudy\sell\target\classes started by Administrator in G:\springstudy\sell)
+2019-02-15 19:57:00,075 - No active profile set, falling back to default profiles: default
+2019-02-15 19:57:02,258 - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-02-15 19:57:02,653 - Finished Spring Data repository scanning in 344ms. Found 2 repository interfaces.
+2019-02-15 19:57:03,348 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$b4a70b72] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-15 19:57:03,789 - The APR based Apache Tomcat Native library failed to load. The error reported was [D:\java\bin\tcnative-1.dll: Can't load IA 32-bit .dll on a AMD 64-bit platform]
+java.lang.UnsatisfiedLinkError: D:\java\bin\tcnative-1.dll: Can't load IA 32-bit .dll on a AMD 64-bit platform
+	at java.lang.ClassLoader$NativeLibrary.load(Native Method)
+	at java.lang.ClassLoader.loadLibrary0(ClassLoader.java:1941)
+	at java.lang.ClassLoader.loadLibrary(ClassLoader.java:1857)
+	at java.lang.Runtime.loadLibrary0(Runtime.java:870)
+	at java.lang.System.loadLibrary(System.java:1122)
+	at org.apache.tomcat.jni.Library.<init>(Library.java:69)
+	at org.apache.tomcat.jni.Library.initialize(Library.java:206)
+	at org.apache.catalina.core.AprLifecycleListener.init(AprLifecycleListener.java:198)
+	at org.apache.catalina.core.AprLifecycleListener.isAprAvailable(AprLifecycleListener.java:107)
+	at org.apache.catalina.connector.Connector.<init>(Connector.java:80)
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getWebServer(TomcatServletWebServerFactory.java:164)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:181)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:154)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:540)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at com.shawn.sell.SellApplication.main(SellApplication.java:10)
+2019-02-15 19:57:04,319 - Tomcat initialized with port(s): 8080 (http)
+2019-02-15 19:57:04,350 - Initializing ProtocolHandler ["http-nio-8080"]
+2019-02-15 19:57:04,370 - Starting service [Tomcat]
+2019-02-15 19:57:04,370 - Starting Servlet engine: [Apache Tomcat/9.0.14]
+2019-02-15 19:57:04,653 - Initializing Spring embedded WebApplicationContext
+2019-02-15 19:57:04,656 - Root WebApplicationContext: initialization completed in 4259 ms
+2019-02-15 19:57:05,166 - HikariPool-1 - Starting...
+2019-02-15 19:57:05,586 - HikariPool-1 - Start completed.
+2019-02-15 19:57:05,966 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-02-15 19:57:06,383 - HHH000412: Hibernate Core {5.3.7.Final}
+2019-02-15 19:57:06,385 - HHH000206: hibernate.properties not found
+2019-02-15 19:57:07,041 - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-02-15 19:57:07,664 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-02-15 19:57:09,594 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-02-15 19:57:11,318 - Initializing ExecutorService 'applicationTaskExecutor'
+2019-02-15 19:57:11,429 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-02-15 19:57:11,713 - Starting ProtocolHandler ["http-nio-8080"]
+2019-02-15 19:57:11,753 - Tomcat started on port(s): 8080 (http) with context path '/sell'
+2019-02-15 19:57:11,757 - Started SellApplication in 13.39 seconds (JVM running for 16.645)
+2019-02-15 19:58:07,215 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-02-15 19:58:07,216 - Initializing Servlet 'dispatcherServlet'
+2019-02-15 19:58:07,248 - Completed initialization in 31 ms
+2019-02-15 19:58:28,987 - HHH000397: Using ASTQueryTranslatorFactory

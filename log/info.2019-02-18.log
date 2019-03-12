@@ -1,0 +1,415 @@
+2019-02-18 20:57:21,918 - Starting OrderServiceImplTest on YLMF-1707182114 with PID 17500 (started by Administrator in G:\springstudy\sell)
+2019-02-18 20:57:21,920 - No active profile set, falling back to default profiles: default
+2019-02-18 20:57:25,822 - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-02-18 20:57:26,469 - Finished Spring Data repository scanning in 578ms. Found 4 repository interfaces.
+2019-02-18 20:57:28,350 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$28fb2878] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-18 20:57:29,294 - HikariPool-1 - Starting...
+2019-02-18 20:57:30,044 - HikariPool-1 - Start completed.
+2019-02-18 20:57:30,535 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-02-18 20:57:31,275 - HHH000412: Hibernate Core {5.3.7.Final}
+2019-02-18 20:57:31,286 - HHH000206: hibernate.properties not found
+2019-02-18 20:57:32,338 - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-02-18 20:57:34,034 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-02-18 20:57:35,119 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: No identifier specified for entity: com.shawn.sell.dto.CartDTO
+2019-02-18 20:57:35,120 - HikariPool-1 - Shutdown initiated...
+2019-02-18 20:57:35,132 - HikariPool-1 - Shutdown completed.
+2019-02-18 20:57:35,155 - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-02-18 21:00:40,610 - Starting OrderServiceImplTest on YLMF-1707182114 with PID 17556 (started by Administrator in G:\springstudy\sell)
+2019-02-18 21:00:40,614 - No active profile set, falling back to default profiles: default
+2019-02-18 21:00:44,365 - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-02-18 21:00:45,072 - Finished Spring Data repository scanning in 657ms. Found 4 repository interfaces.
+2019-02-18 21:00:46,695 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$28fb2878] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-18 21:00:47,397 - HikariPool-1 - Starting...
+2019-02-18 21:00:47,823 - HikariPool-1 - Start completed.
+2019-02-18 21:00:48,041 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-02-18 21:00:48,340 - HHH000412: Hibernate Core {5.3.7.Final}
+2019-02-18 21:00:48,346 - HHH000206: hibernate.properties not found
+2019-02-18 21:00:48,856 - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-02-18 21:00:50,314 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-02-18 21:00:50,926 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: No identifier specified for entity: com.shawn.sell.dto.CartDTO
+2019-02-18 21:00:50,927 - HikariPool-1 - Shutdown initiated...
+2019-02-18 21:00:50,969 - HikariPool-1 - Shutdown completed.
+2019-02-18 21:00:50,993 - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-02-18 21:03:32,403 - Starting OrderServiceImplTest on YLMF-1707182114 with PID 17060 (started by Administrator in G:\springstudy\sell)
+2019-02-18 21:03:32,407 - No active profile set, falling back to default profiles: default
+2019-02-18 21:03:35,835 - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-02-18 21:03:36,257 - Finished Spring Data repository scanning in 381ms. Found 4 repository interfaces.
+2019-02-18 21:03:37,965 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$cb5f0402] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-18 21:03:38,818 - HikariPool-1 - Starting...
+2019-02-18 21:03:39,435 - HikariPool-1 - Start completed.
+2019-02-18 21:03:39,655 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-02-18 21:03:39,845 - HHH000412: Hibernate Core {5.3.7.Final}
+2019-02-18 21:03:39,847 - HHH000206: hibernate.properties not found
+2019-02-18 21:03:40,355 - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-02-18 21:03:42,777 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-02-18 21:03:43,588 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: No identifier specified for entity: com.shawn.sell.dto.CartDTO
+2019-02-18 21:03:43,588 - HikariPool-1 - Shutdown initiated...
+2019-02-18 21:03:43,609 - HikariPool-1 - Shutdown completed.
+2019-02-18 21:03:43,656 - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-02-18 21:04:09,561 - Starting OrderServiceImplTest on YLMF-1707182114 with PID 13760 (started by Administrator in G:\springstudy\sell)
+2019-02-18 21:04:09,563 - No active profile set, falling back to default profiles: default
+2019-02-18 21:04:13,930 - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-02-18 21:04:14,227 - Finished Spring Data repository scanning in 268ms. Found 4 repository interfaces.
+2019-02-18 21:04:15,410 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$e3c73d2f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-18 21:04:16,328 - HikariPool-1 - Starting...
+2019-02-18 21:04:16,803 - HikariPool-1 - Start completed.
+2019-02-18 21:04:17,009 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-02-18 21:04:17,193 - HHH000412: Hibernate Core {5.3.7.Final}
+2019-02-18 21:04:17,199 - HHH000206: hibernate.properties not found
+2019-02-18 21:04:17,694 - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-02-18 21:04:19,587 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-02-18 21:04:20,569 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: No identifier specified for entity: com.shawn.sell.dto.CartDTO
+2019-02-18 21:04:20,569 - HikariPool-1 - Shutdown initiated...
+2019-02-18 21:04:20,592 - HikariPool-1 - Shutdown completed.
+2019-02-18 21:04:20,614 - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-02-18 21:09:43,346 - Starting OrderServiceImplTest on YLMF-1707182114 with PID 3844 (started by Administrator in G:\springstudy\sell)
+2019-02-18 21:09:43,362 - No active profile set, falling back to default profiles: default
+2019-02-18 21:09:47,519 - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-02-18 21:09:48,038 - Finished Spring Data repository scanning in 495ms. Found 4 repository interfaces.
+2019-02-18 21:09:50,540 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$8a402f1b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-18 21:09:51,640 - HikariPool-1 - Starting...
+2019-02-18 21:09:52,257 - HikariPool-1 - Start completed.
+2019-02-18 21:09:52,515 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-02-18 21:09:52,757 - HHH000412: Hibernate Core {5.3.7.Final}
+2019-02-18 21:09:52,760 - HHH000206: hibernate.properties not found
+2019-02-18 21:09:53,406 - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-02-18 21:09:55,540 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-02-18 21:09:56,266 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: No identifier specified for entity: com.shawn.sell.dto.OrderDTO
+2019-02-18 21:09:56,267 - HikariPool-1 - Shutdown initiated...
+2019-02-18 21:09:56,287 - HikariPool-1 - Shutdown completed.
+2019-02-18 21:09:56,316 - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-02-18 21:14:17,232 - Starting OrderServiceImplTest on YLMF-1707182114 with PID 18040 (started by Administrator in G:\springstudy\sell)
+2019-02-18 21:14:17,234 - No active profile set, falling back to default profiles: default
+2019-02-18 21:14:21,574 - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-02-18 21:14:22,071 - Finished Spring Data repository scanning in 436ms. Found 4 repository interfaces.
+2019-02-18 21:14:23,812 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$a07f0de1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-18 21:14:24,820 - HikariPool-1 - Starting...
+2019-02-18 21:14:25,552 - HikariPool-1 - Start completed.
+2019-02-18 21:14:25,783 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-02-18 21:14:25,974 - HHH000412: Hibernate Core {5.3.7.Final}
+2019-02-18 21:14:25,979 - HHH000206: hibernate.properties not found
+2019-02-18 21:14:26,620 - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-02-18 21:14:28,555 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-02-18 21:14:29,403 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: No identifier specified for entity: com.shawn.sell.dto.OrderDTO
+2019-02-18 21:14:29,404 - HikariPool-1 - Shutdown initiated...
+2019-02-18 21:14:29,445 - HikariPool-1 - Shutdown completed.
+2019-02-18 21:14:29,468 - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-02-18 21:14:39,954 - Starting OrderServiceImplTest on YLMF-1707182114 with PID 12112 (started by Administrator in G:\springstudy\sell)
+2019-02-18 21:14:39,956 - No active profile set, falling back to default profiles: default
+2019-02-18 21:14:43,856 - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-02-18 21:14:44,366 - Finished Spring Data repository scanning in 476ms. Found 4 repository interfaces.
+2019-02-18 21:14:46,249 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$73fbf7a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-18 21:14:47,117 - HikariPool-1 - Starting...
+2019-02-18 21:14:47,872 - HikariPool-1 - Start completed.
+2019-02-18 21:14:48,134 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-02-18 21:14:48,379 - HHH000412: Hibernate Core {5.3.7.Final}
+2019-02-18 21:14:48,389 - HHH000206: hibernate.properties not found
+2019-02-18 21:14:48,917 - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-02-18 21:14:50,518 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-02-18 21:14:51,822 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: No identifier specified for entity: com.shawn.sell.dto.OrderDTO
+2019-02-18 21:14:51,823 - HikariPool-1 - Shutdown initiated...
+2019-02-18 21:14:51,856 - HikariPool-1 - Shutdown completed.
+2019-02-18 21:14:51,884 - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-02-18 21:15:43,389 - Starting OrderServiceImplTest on YLMF-1707182114 with PID 8592 (started by Administrator in G:\springstudy\sell)
+2019-02-18 21:15:43,395 - No active profile set, falling back to default profiles: default
+2019-02-18 21:15:47,270 - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-02-18 21:15:47,745 - Finished Spring Data repository scanning in 411ms. Found 4 repository interfaces.
+2019-02-18 21:15:49,619 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$daacf2d4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-18 21:15:50,470 - HikariPool-1 - Starting...
+2019-02-18 21:15:50,963 - HikariPool-1 - Start completed.
+2019-02-18 21:15:51,199 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-02-18 21:15:51,379 - HHH000412: Hibernate Core {5.3.7.Final}
+2019-02-18 21:15:51,384 - HHH000206: hibernate.properties not found
+2019-02-18 21:15:51,841 - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-02-18 21:15:53,550 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-02-18 21:15:54,305 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: No identifier specified for entity: com.shawn.sell.dto.OrderDTO
+2019-02-18 21:15:54,306 - HikariPool-1 - Shutdown initiated...
+2019-02-18 21:15:54,340 - HikariPool-1 - Shutdown completed.
+2019-02-18 21:15:54,403 - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-02-18 21:16:08,407 - Starting OrderServiceImplTest on YLMF-1707182114 with PID 10080 (started by Administrator in G:\springstudy\sell)
+2019-02-18 21:16:08,409 - No active profile set, falling back to default profiles: default
+2019-02-18 21:16:12,226 - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-02-18 21:16:12,784 - Finished Spring Data repository scanning in 483ms. Found 4 repository interfaces.
+2019-02-18 21:16:14,294 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$a22a5d0e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-18 21:16:15,004 - HikariPool-1 - Starting...
+2019-02-18 21:16:15,585 - HikariPool-1 - Start completed.
+2019-02-18 21:16:15,774 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-02-18 21:16:15,966 - HHH000412: Hibernate Core {5.3.7.Final}
+2019-02-18 21:16:15,970 - HHH000206: hibernate.properties not found
+2019-02-18 21:16:16,470 - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-02-18 21:16:17,859 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-02-18 21:16:18,799 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: No identifier specified for entity: com.shawn.sell.dto.OrderDTO
+2019-02-18 21:16:18,810 - HikariPool-1 - Shutdown initiated...
+2019-02-18 21:16:18,981 - HikariPool-1 - Shutdown completed.
+2019-02-18 21:16:19,003 - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-02-18 21:16:36,203 - Starting OrderServiceImplTest on YLMF-1707182114 with PID 11980 (started by Administrator in G:\springstudy\sell)
+2019-02-18 21:16:36,205 - No active profile set, falling back to default profiles: default
+2019-02-18 21:16:40,661 - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-02-18 21:16:41,181 - Finished Spring Data repository scanning in 462ms. Found 4 repository interfaces.
+2019-02-18 21:16:43,336 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$675c4833] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-18 21:16:44,305 - HikariPool-1 - Starting...
+2019-02-18 21:16:44,766 - HikariPool-1 - Start completed.
+2019-02-18 21:16:44,952 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-02-18 21:16:45,201 - HHH000412: Hibernate Core {5.3.7.Final}
+2019-02-18 21:16:45,205 - HHH000206: hibernate.properties not found
+2019-02-18 21:16:45,683 - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-02-18 21:16:46,988 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-02-18 21:16:47,859 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: No identifier specified for entity: com.shawn.sell.dto.OrderDTO
+2019-02-18 21:16:47,859 - HikariPool-1 - Shutdown initiated...
+2019-02-18 21:16:47,877 - HikariPool-1 - Shutdown completed.
+2019-02-18 21:16:47,900 - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-02-18 21:17:15,621 - Starting OrderServiceImplTest on YLMF-1707182114 with PID 3356 (started by Administrator in G:\springstudy\sell)
+2019-02-18 21:17:15,623 - No active profile set, falling back to default profiles: default
+2019-02-18 21:17:19,528 - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-02-18 21:17:20,080 - Finished Spring Data repository scanning in 466ms. Found 4 repository interfaces.
+2019-02-18 21:17:21,321 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$71d44285] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-18 21:17:22,028 - HikariPool-1 - Starting...
+2019-02-18 21:17:22,552 - HikariPool-1 - Start completed.
+2019-02-18 21:17:22,730 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-02-18 21:17:22,868 - HHH000412: Hibernate Core {5.3.7.Final}
+2019-02-18 21:17:22,871 - HHH000206: hibernate.properties not found
+2019-02-18 21:17:23,294 - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-02-18 21:17:24,432 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-02-18 21:17:25,300 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: No identifier specified for entity: com.shawn.sell.dto.OrderDTO
+2019-02-18 21:17:25,303 - HikariPool-1 - Shutdown initiated...
+2019-02-18 21:17:25,353 - HikariPool-1 - Shutdown completed.
+2019-02-18 21:17:25,381 - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-02-18 21:43:20,394 - Starting OrderServiceImplTest on YLMF-1707182114 with PID 2212 (started by Administrator in G:\springstudy\sell)
+2019-02-18 21:43:20,402 - No active profile set, falling back to default profiles: default
+2019-02-18 21:43:24,370 - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-02-18 21:43:24,893 - Finished Spring Data repository scanning in 496ms. Found 4 repository interfaces.
+2019-02-18 21:43:26,745 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$5bedfc9b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-18 21:43:27,454 - HikariPool-1 - Starting...
+2019-02-18 21:43:28,016 - HikariPool-1 - Start completed.
+2019-02-18 21:43:28,209 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-02-18 21:43:28,386 - HHH000412: Hibernate Core {5.3.7.Final}
+2019-02-18 21:43:28,395 - HHH000206: hibernate.properties not found
+2019-02-18 21:43:28,885 - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-02-18 21:43:30,156 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-02-18 21:43:30,632 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: No identifier specified for entity: com.shawn.sell.dto.OrderDTO
+2019-02-18 21:43:30,633 - HikariPool-1 - Shutdown initiated...
+2019-02-18 21:43:30,649 - HikariPool-1 - Shutdown completed.
+2019-02-18 21:43:30,671 - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-02-18 21:48:44,983 - Starting OrderServiceImplTest on YLMF-1707182114 with PID 8116 (started by Administrator in G:\springstudy\sell)
+2019-02-18 21:48:44,984 - No active profile set, falling back to default profiles: default
+2019-02-18 21:48:48,784 - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-02-18 21:48:49,193 - Finished Spring Data repository scanning in 348ms. Found 4 repository interfaces.
+2019-02-18 21:48:50,216 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$a4759c60] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-18 21:48:50,961 - HikariPool-1 - Starting...
+2019-02-18 21:48:51,585 - HikariPool-1 - Start completed.
+2019-02-18 21:48:51,729 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-02-18 21:48:51,914 - HHH000412: Hibernate Core {5.3.7.Final}
+2019-02-18 21:48:51,919 - HHH000206: hibernate.properties not found
+2019-02-18 21:48:52,350 - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-02-18 21:48:53,488 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-02-18 21:48:54,275 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: No identifier specified for entity: com.shawn.sell.dto.OrderDTO
+2019-02-18 21:48:54,276 - HikariPool-1 - Shutdown initiated...
+2019-02-18 21:48:54,338 - HikariPool-1 - Shutdown completed.
+2019-02-18 21:48:54,366 - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-02-18 21:50:18,654 - Starting OrderServiceImplTest on YLMF-1707182114 with PID 4412 (started by Administrator in G:\springstudy\sell)
+2019-02-18 21:50:18,656 - No active profile set, falling back to default profiles: default
+2019-02-18 21:50:22,278 - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-02-18 21:50:22,820 - Finished Spring Data repository scanning in 478ms. Found 4 repository interfaces.
+2019-02-18 21:50:24,443 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$c244f39b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-18 21:50:25,334 - HikariPool-1 - Starting...
+2019-02-18 21:50:25,900 - HikariPool-1 - Start completed.
+2019-02-18 21:50:26,067 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-02-18 21:50:26,233 - HHH000412: Hibernate Core {5.3.7.Final}
+2019-02-18 21:50:26,238 - HHH000206: hibernate.properties not found
+2019-02-18 21:50:26,718 - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-02-18 21:50:28,649 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-02-18 21:50:29,810 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: No identifier specified for entity: com.shawn.sell.dto.OrderDTO
+2019-02-18 21:50:29,810 - HikariPool-1 - Shutdown initiated...
+2019-02-18 21:50:29,830 - HikariPool-1 - Shutdown completed.
+2019-02-18 21:50:29,877 - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-02-18 21:56:22,713 - Starting OrderServiceImplTest on YLMF-1707182114 with PID 7752 (started by Administrator in G:\springstudy\sell)
+2019-02-18 21:56:22,715 - No active profile set, falling back to default profiles: default
+2019-02-18 21:56:25,925 - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-02-18 21:56:26,282 - Finished Spring Data repository scanning in 326ms. Found 4 repository interfaces.
+2019-02-18 21:56:27,535 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$4a3fd142] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-18 21:56:28,198 - HikariPool-1 - Starting...
+2019-02-18 21:56:28,644 - HikariPool-1 - Start completed.
+2019-02-18 21:56:28,857 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-02-18 21:56:28,991 - HHH000412: Hibernate Core {5.3.7.Final}
+2019-02-18 21:56:28,993 - HHH000206: hibernate.properties not found
+2019-02-18 21:56:29,435 - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-02-18 21:56:30,682 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-02-18 21:56:31,209 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: No identifier specified for entity: com.shawn.sell.dto.OrderDTO
+2019-02-18 21:56:31,209 - HikariPool-1 - Shutdown initiated...
+2019-02-18 21:56:31,222 - HikariPool-1 - Shutdown completed.
+2019-02-18 21:56:31,241 - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-02-18 22:01:25,886 - Starting OrderServiceImplTest on YLMF-1707182114 with PID 12000 (started by Administrator in G:\springstudy\sell)
+2019-02-18 22:01:25,887 - No active profile set, falling back to default profiles: default
+2019-02-18 22:01:28,917 - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-02-18 22:01:29,273 - Finished Spring Data repository scanning in 315ms. Found 4 repository interfaces.
+2019-02-18 22:01:31,190 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$f7f992ea] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-18 22:01:32,014 - HikariPool-1 - Starting...
+2019-02-18 22:01:32,795 - HikariPool-1 - Start completed.
+2019-02-18 22:01:33,083 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-02-18 22:01:33,377 - HHH000412: Hibernate Core {5.3.7.Final}
+2019-02-18 22:01:33,384 - HHH000206: hibernate.properties not found
+2019-02-18 22:01:33,944 - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-02-18 22:01:36,014 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-02-18 22:01:39,166 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-02-18 22:01:45,038 - Initializing ExecutorService 'applicationTaskExecutor'
+2019-02-18 22:01:45,256 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-02-18 22:01:46,820 - Started OrderServiceImplTest in 22.438 seconds (JVM running for 25.33)
+2019-02-18 22:02:14,194 - [创建订单] result=OrderDTO(orderId=null, buyerName=Shawn, buyerPhone=13405608660, buyerAddress=苏州江科大, buyerOpenid=110110, orderAmount=null, orderStatus=null, payStatus=null, createTime=null, updateTime=null, orderDetailList=[OrderDetail(detailId=1550498534022999663, orderId=1550498507461795924, productId=1234568, productName=芒果冰, productPrice=5.00, productQuantity=1, productIcon=https://baike.baidu.com/pic/%E8%8A%92%E6%9E%9C%E5%86%B0/4990591/0/4034970a304e251fce0583b9ad86c9177e3e5384?fr=lemma&ct=single#aid=0&pic=4034970a304e251fce0583b9ad86c9177e3e5384)])
+2019-02-18 22:02:14,234 - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-02-18 22:02:14,237 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-02-18 22:02:14,245 - HikariPool-1 - Shutdown initiated...
+2019-02-18 22:02:14,263 - HikariPool-1 - Shutdown completed.
+2019-02-18 22:02:26,905 - Starting OrderServiceImplTest on YLMF-1707182114 with PID 5920 (started by Administrator in G:\springstudy\sell)
+2019-02-18 22:02:26,907 - No active profile set, falling back to default profiles: default
+2019-02-18 22:02:30,774 - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-02-18 22:02:31,206 - Finished Spring Data repository scanning in 394ms. Found 4 repository interfaces.
+2019-02-18 22:02:33,100 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$5338f222] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-18 22:02:33,701 - HikariPool-1 - Starting...
+2019-02-18 22:02:34,145 - HikariPool-1 - Start completed.
+2019-02-18 22:02:34,341 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-02-18 22:02:34,499 - HHH000412: Hibernate Core {5.3.7.Final}
+2019-02-18 22:02:34,502 - HHH000206: hibernate.properties not found
+2019-02-18 22:02:34,851 - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-02-18 22:02:36,020 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-02-18 22:02:38,409 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-02-18 22:02:41,462 - Initializing ExecutorService 'applicationTaskExecutor'
+2019-02-18 22:02:41,611 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-02-18 22:02:42,529 - Started OrderServiceImplTest in 16.86 seconds (JVM running for 19.8)
+2019-02-18 22:02:43,620 - [创建订单] result=OrderDTO(orderId=null, buyerName=Shawn, buyerPhone=13405608660, buyerAddress=苏州江科大, buyerOpenid=110110, orderAmount=null, orderStatus=null, payStatus=null, createTime=null, updateTime=null, orderDetailList=[OrderDetail(detailId=1550498562955896277, orderId=1550498562775672677, productId=1234568, productName=芒果冰, productPrice=5.00, productQuantity=1, productIcon=https://baike.baidu.com/pic/%E8%8A%92%E6%9E%9C%E5%86%B0/4990591/0/4034970a304e251fce0583b9ad86c9177e3e5384?fr=lemma&ct=single#aid=0&pic=4034970a304e251fce0583b9ad86c9177e3e5384)])
+2019-02-18 22:02:43,759 - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-02-18 22:02:43,766 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-02-18 22:02:43,771 - HikariPool-1 - Shutdown initiated...
+2019-02-18 22:02:43,808 - HikariPool-1 - Shutdown completed.
+2019-02-18 22:08:04,564 - Starting OrderServiceImplTest on YLMF-1707182114 with PID 12808 (started by Administrator in G:\springstudy\sell)
+2019-02-18 22:08:04,565 - No active profile set, falling back to default profiles: default
+2019-02-18 22:08:08,203 - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-02-18 22:08:08,589 - Finished Spring Data repository scanning in 332ms. Found 4 repository interfaces.
+2019-02-18 22:08:09,865 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$79282719] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-18 22:08:10,630 - HikariPool-1 - Starting...
+2019-02-18 22:08:11,247 - HikariPool-1 - Start completed.
+2019-02-18 22:08:11,492 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-02-18 22:08:11,783 - HHH000412: Hibernate Core {5.3.7.Final}
+2019-02-18 22:08:11,788 - HHH000206: hibernate.properties not found
+2019-02-18 22:08:12,390 - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-02-18 22:08:14,458 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-02-18 22:08:17,021 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-02-18 22:08:20,316 - Initializing ExecutorService 'applicationTaskExecutor'
+2019-02-18 22:08:20,487 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-02-18 22:08:22,325 - Started OrderServiceImplTest in 19.682 seconds (JVM running for 22.884)
+2019-02-18 22:08:23,900 - [创建订单] result=OrderDTO(orderId=null, buyerName=Shawn111, buyerPhone=12345678990, buyerAddress=江科大, buyerOpenid=110110, orderAmount=null, orderStatus=null, payStatus=null, createTime=null, updateTime=null, orderDetailList=[OrderDetail(detailId=1550498903616197543, orderId=1550498902937306467, productId=1234568, productName=芒果冰, productPrice=5.00, productQuantity=1, productIcon=https://baike.baidu.com/pic/%E8%8A%92%E6%9E%9C%E5%86%B0/4990591/0/4034970a304e251fce0583b9ad86c9177e3e5384?fr=lemma&ct=single#aid=0&pic=4034970a304e251fce0583b9ad86c9177e3e5384)])
+2019-02-18 22:08:23,957 - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-02-18 22:08:23,963 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-02-18 22:08:23,981 - HikariPool-1 - Shutdown initiated...
+2019-02-18 22:08:24,008 - HikariPool-1 - Shutdown completed.
+2019-02-18 22:13:21,219 - Starting OrderServiceImplTest on YLMF-1707182114 with PID 12300 (started by Administrator in G:\springstudy\sell)
+2019-02-18 22:13:21,221 - No active profile set, falling back to default profiles: default
+2019-02-18 22:13:24,639 - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-02-18 22:13:25,067 - Finished Spring Data repository scanning in 386ms. Found 4 repository interfaces.
+2019-02-18 22:13:26,306 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$d0febfe8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-18 22:13:26,873 - HikariPool-1 - Starting...
+2019-02-18 22:13:27,288 - HikariPool-1 - Start completed.
+2019-02-18 22:13:27,446 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-02-18 22:13:27,613 - HHH000412: Hibernate Core {5.3.7.Final}
+2019-02-18 22:13:27,617 - HHH000206: hibernate.properties not found
+2019-02-18 22:13:27,981 - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-02-18 22:13:29,372 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-02-18 22:13:32,515 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-02-18 22:13:35,899 - Initializing ExecutorService 'applicationTaskExecutor'
+2019-02-18 22:13:36,096 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-02-18 22:13:37,221 - Started OrderServiceImplTest in 16.967 seconds (JVM running for 19.427)
+2019-02-18 22:13:38,229 - [创建订单] result=OrderDTO(orderId=null, buyerName=凡哥, buyerPhone=1343342423, buyerAddress=科大, buyerOpenid=110110110, orderAmount=null, orderStatus=null, payStatus=null, createTime=null, updateTime=null, orderDetailList=[OrderDetail(detailId=1550499217624330402, orderId=1550499217453108305, productId=1234568, productName=芒果冰, productPrice=5.00, productQuantity=2, productIcon=https://baike.baidu.com/pic/%E8%8A%92%E6%9E%9C%E5%86%B0/4990591/0/4034970a304e251fce0583b9ad86c9177e3e5384?fr=lemma&ct=single#aid=0&pic=4034970a304e251fce0583b9ad86c9177e3e5384)])
+2019-02-18 22:13:38,339 - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-02-18 22:13:38,347 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-02-18 22:13:38,353 - HikariPool-1 - Shutdown initiated...
+2019-02-18 22:13:38,393 - HikariPool-1 - Shutdown completed.
+2019-02-18 22:15:08,607 - Starting OrderServiceImplTest on YLMF-1707182114 with PID 9880 (started by Administrator in G:\springstudy\sell)
+2019-02-18 22:15:08,608 - No active profile set, falling back to default profiles: default
+2019-02-18 22:15:11,136 - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-02-18 22:15:11,591 - Finished Spring Data repository scanning in 433ms. Found 4 repository interfaces.
+2019-02-18 22:15:12,854 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$d0febfe8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-18 22:15:13,751 - HikariPool-1 - Starting...
+2019-02-18 22:15:14,289 - HikariPool-1 - Start completed.
+2019-02-18 22:15:14,501 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-02-18 22:15:14,667 - HHH000412: Hibernate Core {5.3.7.Final}
+2019-02-18 22:15:14,671 - HHH000206: hibernate.properties not found
+2019-02-18 22:15:15,121 - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-02-18 22:15:16,182 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-02-18 22:15:18,255 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-02-18 22:15:20,925 - Initializing ExecutorService 'applicationTaskExecutor'
+2019-02-18 22:15:21,064 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-02-18 22:15:21,998 - Started OrderServiceImplTest in 14.325 seconds (JVM running for 16.533)
+2019-02-18 22:15:22,882 - [创建订单] result=OrderDTO(orderId=null, buyerName=凡哥, buyerPhone=1343342423, buyerAddress=科大, buyerOpenid=110110110, orderAmount=null, orderStatus=null, payStatus=null, createTime=null, updateTime=null, orderDetailList=[OrderDetail(detailId=1550499322336264804, orderId=1550499322191535688, productId=1234568, productName=芒果冰, productPrice=5.00, productQuantity=2, productIcon=https://baike.baidu.com/pic/%E8%8A%92%E6%9E%9C%E5%86%B0/4990591/0/4034970a304e251fce0583b9ad86c9177e3e5384?fr=lemma&ct=single#aid=0&pic=4034970a304e251fce0583b9ad86c9177e3e5384), OrderDetail(detailId=1550499322382487298, orderId=1550499322191535688, productId=123456, productName=皮蛋瘦肉粥, productPrice=3.20, productQuantity=2, productIcon=https://baike.baidu.com/pic/%E7%B2%A5/363413/0/bd3eb13533fa828b91b4c77af71f4134960a5a97?fr=lemma&ct=single#aid=0&pic=bd3eb13533fa828b91b4c77af71f4134960a5a97)])
+2019-02-18 22:15:22,900 - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-02-18 22:15:22,902 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-02-18 22:15:22,907 - HikariPool-1 - Shutdown initiated...
+2019-02-18 22:15:22,920 - HikariPool-1 - Shutdown completed.
