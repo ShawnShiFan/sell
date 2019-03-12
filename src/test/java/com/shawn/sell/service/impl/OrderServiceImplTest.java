@@ -16,6 +16,7 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.test.context.junit4.SpringRunner;
+import org.springframework.transaction.annotation.Transactional;
 
 import javax.swing.*;
 
@@ -85,16 +86,22 @@ public class OrderServiceImplTest {
     @Test
     public void cancel() {
             OrderDTO orderDTO = orderService.findById(ORDER_ID);
-            OrderDTO result = orderService.Cancel(orderDTO);
+            OrderDTO result = orderService.cancel(orderDTO);
             Assert.assertEquals(OrderStatusEnum.CANCEL.getCode(),result.getOrderStatus());
 
     }
 
     @Test
     public void finish() {
+        OrderDTO orderDTO = orderService.findById(ORDER_ID);
+        OrderDTO result = orderService.finish(orderDTO);
+        Assert.assertEquals(OrderStatusEnum.FINISHED.getCode(),result.getOrderStatus());
     }
 
     @Test
     public void paid() {
+        OrderDTO orderDTO = orderService.findById(ORDER_ID);
+        OrderDTO result = orderService.paid(orderDTO);
+        Assert.assertEquals(OrderStatusEnum.FINISHED.getCode(),result.getPayStatus());
     }
 }
