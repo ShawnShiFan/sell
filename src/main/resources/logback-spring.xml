@@ -24,7 +24,12 @@
         <!--滚动策略-->
         <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
             <!--路径-->
+            <!--1设备路径-->
+<!--
             <fileNamePattern>G:/springstudy/sell/log/info.%d.log</fileNamePattern>
+-->
+           <!-- 2设备路径-->
+            <fileNamePattern>E:/pro/sell/log/info.%d.log</fileNamePattern>
         </rollingPolicy>
     </appender>
 
@@ -41,7 +46,10 @@
         <!--滚动策略-->
         <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
             <!--路径-->
-            <fileNamePattern>G:/springstudy/sell/log/error.%d.log</fileNamePattern>
+           <!-- 1设备路径-->
+          <!--  <fileNamePattern>G:/springstudy/sell/log/error.%d.log</fileNamePattern>-->
+           <!-- 2设备路径-->
+            <fileNamePattern>E:/pro/sell/log/error.%d.log</fileNamePattern>
         </rollingPolicy>
     </appender>
 

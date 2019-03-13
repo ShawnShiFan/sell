@@ -1,5 +1,6 @@
 package com.shawn.sell.VO;
 
+
 import lombok.Data;
 
 /**
@@ -7,6 +8,7 @@ import lombok.Data;
  * @Author: Shawn
  * @Date: 2019/2/11 15:19
  */
+
 @Data
 public class ResultVO<T> {
 
