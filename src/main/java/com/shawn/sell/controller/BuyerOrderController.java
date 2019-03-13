@@ -1,9 +1,15 @@
 package com.shawn.sell.controller;
 
 import com.shawn.sell.VO.ResultVO;
+import com.shawn.sell.form.OrderForm;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.validation.BindingResult;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+
+import javax.validation.Valid;
+import java.util.Map;
 
 /**
  * @Author: Shawn
@@ -16,7 +22,14 @@ import org.springframework.web.bind.annotation.RestController;
 public class BuyerOrderController {
 
     //创建订单
-    //public ResultVO<>
+    @PostMapping("/create")
+    public ResultVO<Map<String,String>>create(@Valid OrderForm orderForm, BindingResult bindingResult){
+        if (bindingResult.hasErrors()){
+            log.error("【创建订单】参数不正确");
+        }
+
+        return null;
+    }
 
     //订单列表
     //订单详情
