@@ -39,33 +39,27 @@ public class OrderServiceImplTest {
 
 
   private final String BUYER_OPENID ="110110110";
-  private final String ORDER_ID = "1550499217453108305";
+  private final String ORDER_ID = "1552713200732894641";
     @Test
     public void create() {
-        OrderDTO orderDTO = new OrderDTO();
-        orderDTO.setBuyerName("凡哥");
-        orderDTO.setBuyerAddress("科大");
-        orderDTO.setBuyerPhone("1343342423");
-        orderDTO.setBuyerOpenid(BUYER_OPENID);
+       OrderDTO orderDTO = new OrderDTO();
+       orderDTO.setBuyerName("施凡测试2");
+       orderDTO.setBuyerAddress("江苏科技");
+       orderDTO.setBuyerPhone("13400000000");
+       orderDTO.setBuyerOpenid(BUYER_OPENID);
 
-        //购物车
+
+       //购物车
         List<OrderDetail> orderDetailList = new ArrayList<>();
         OrderDetail o1 = new OrderDetail();
-        o1.setProductId("1234568");
-        o1.setProductQuantity(2);
-
-
-        OrderDetail o2 = new OrderDetail();
-        o2.setProductId("123457");
-        o2.setProductQuantity(2);
+        o1.setProductId("123456");   //商品id必须是数据库中已经存在的
+        o1.setProductQuantity(1);
         orderDetailList.add(o1);
-        orderDetailList.add(o2);
+
         orderDTO.setOrderDetailList(orderDetailList);
-
+        //将返回的orderDTO压入result
         OrderDTO result = orderService.create(orderDTO);
-        log.info("[创建订单] result={}",result);
-        Assert.assertNotNull(result);
-
+        log.info("【创建订单】result={}",result);
 
     }
 

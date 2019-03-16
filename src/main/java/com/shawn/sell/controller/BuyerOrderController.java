@@ -46,11 +46,10 @@ public class BuyerOrderController {
             throw  new SellException(ResultEnum.CART_EMPTY);
         }
 
-
-     OrderDTO createResult =  orderService.create(orderDTO);
-    Map<String,String> map = new HashMap<>();
-    map.put("orderId",createResult.getOrderId());
-    return ResultVOUtil.success(map);
+        OrderDTO createResult =  orderService.create(orderDTO);
+        Map<String,String> map = new HashMap<>();
+        map.put("orderId",createResult.getOrderId());
+        return ResultVOUtil.success(map);
 
     }
 

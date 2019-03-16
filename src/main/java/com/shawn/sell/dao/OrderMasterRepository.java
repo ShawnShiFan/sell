@@ -14,4 +14,5 @@ public interface OrderMasterRepository extends JpaRepository<OrderMaster,String>
 
    //按分页来查
     Page<OrderMaster> findByBuyerOpenid(String buyerOpenid, Pageable pageable);
+
 }
