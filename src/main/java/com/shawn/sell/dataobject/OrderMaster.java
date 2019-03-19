@@ -7,7 +7,6 @@ import org.hibernate.annotations.DynamicUpdate;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
-import javax.persistence.Transient;
 import java.math.BigDecimal;
 import java.util.Date;
 
@@ -43,7 +42,7 @@ public class OrderMaster {
     /**付款状态 */
     private Integer payStatus= PayStatusEnum.WAIT.getCode();
 
-    /** 创建时间*/
+   /** 创建时间*/
     private Date createTime;
     /** 更新时间*/
     private  Date updateTime;
