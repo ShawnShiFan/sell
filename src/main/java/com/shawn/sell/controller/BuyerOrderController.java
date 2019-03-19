@@ -82,7 +82,7 @@ public class BuyerOrderController {
     public ResultVO<OrderDTO> detail(@RequestParam("openid") String openid,
                                      @RequestParam("orderId") String orderId){
         //TODO
-        /*安全性问题 待改进*/
+        /*安全性问题 后续待改进*/
        OrderDTO orderDTO =  orderService.findById(orderId);
         return ResultVOUtil.success(orderDTO);
 
