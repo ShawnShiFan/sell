@@ -83,15 +83,18 @@ public class OrderServiceImpl implements OrderService {
 
         //3.写入订单数据库(orderMaster和orderDetail)
         OrderMaster orderMaster = new OrderMaster();
-        orderDTO.setOrderId(orderId);
+        orderDTO.setOrderId(orderId); //如果拷贝属性放在下面则orderId为空
         BeanUtils.copyProperties(orderDTO , orderMaster);
         orderMaster.setOrderId(orderId);
         orderMaster.setOrderAmount(orderAmount);
         orderMaster.setOrderStatus(OrderStatusEnum.NEW.getCode());
         orderMaster.setPayStatus(PayStatusEnum.WAIT.getCode());
 
-
+        Date date = new Date();
+        orderMaster.setCreateTime(date);
+        orderMaster.setUpdateTime(date);
         orderMasterRepository.save(orderMaster);
+
         //4.扣库存
         //两种方法，一种是直接写在上面for循环中，另一种是单独拿出来用lambda的方法
         List<CartDTO> cartDTOList =  orderDTO.getOrderDetailList().stream().map(e ->
