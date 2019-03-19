@@ -24,26 +24,26 @@ import java.util.List;
 public class ProductServiceImplTest {
 
     @Autowired
-    private  ProductServiceImpl productService;
+    private ProductServiceImpl productService;
 
     @Test
     public void findById() {
-       ProductInfo productInfo = productService.findById("123456");
-        Assert.assertEquals("123456",productInfo.getProductId());
+        ProductInfo productInfo = productService.findById("123456");
+        Assert.assertEquals("123456", productInfo.getProductId());
     }
 
     @Test
     public void findUpAll() {
-        List<ProductInfo> productInfoList =  productService.findUpAll();
-        Assert.assertNotEquals(0,productInfoList.size());
+        List<ProductInfo> productInfoList = productService.findUpAll();
+        Assert.assertNotEquals(0, productInfoList.size());
     }
 
     @Test
     public void findAll() {
-        PageRequest request = new PageRequest(0,2);
+        PageRequest request = new PageRequest(0, 2);
         Page<ProductInfo> productInfoPage = productService.findAll(request);
-       // System.out.println( productInfoPage.getTotalElements());
-        Assert.assertNotEquals(0,productInfoPage.getTotalElements());
+        // System.out.println( productInfoPage.getTotalElements());
+        Assert.assertNotEquals(0, productInfoPage.getTotalElements());
     }
 
     @Test

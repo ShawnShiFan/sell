@@ -11,12 +11,12 @@ import java.util.List;
  */
 @Service
 public interface CategoryService {
-   ProductCategory findById(Integer categoryId);
+    ProductCategory findById(Integer categoryId);
 
-   List<ProductCategory> findAll();
+    List<ProductCategory> findAll();
 
-   List<ProductCategory> findByCategoryTypeIn(List<Integer> categoryTypeList);
+    List<ProductCategory> findByCategoryTypeIn(List<Integer> categoryTypeList);
 
-   ProductCategory save(ProductCategory productCategory);
+    ProductCategory save(ProductCategory productCategory);
 
 }

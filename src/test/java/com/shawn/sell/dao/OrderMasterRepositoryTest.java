@@ -28,7 +28,7 @@ public class OrderMasterRepositoryTest {
     private final String OPENID = "110110";
 
     @Test
-    public void saveTest(){
+    public void saveTest() {
         OrderMaster orderMaster = new OrderMaster();
         orderMaster.setOrderId("1234567");
         orderMaster.setBuyerName("Strive");
@@ -38,17 +38,17 @@ public class OrderMasterRepositoryTest {
         orderMaster.setOrderAmount(new BigDecimal(2.5));
 
 
-
         OrderMaster result = repository.save(orderMaster);
 
         Assert.assertNotNull(result);
 
     }
+
     @Test
     public void findByBuyerOpenid() {
-        PageRequest request =  PageRequest.of(0,2);
+        PageRequest request = PageRequest.of(0, 2);
 
-        Page<OrderMaster> result =  repository.findByBuyerOpenid(OPENID,request);
+        Page<OrderMaster> result = repository.findByBuyerOpenid(OPENID, request);
         System.out.println(result.getTotalElements());
     }
 }

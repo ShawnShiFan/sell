@@ -8,13 +8,13 @@ import javax.validation.constraints.NotEmpty;
  * @Author: Shawn
  * @Date: 2019/3/13 17:54
  * @Version 1.0
- *所有Order相关表单验证
+ * 所有Order相关表单验证
  */
 @Data
 public class OrderForm {
     /*
-    * 买家姓名
-    */
+     * 买家姓名
+     */
     @NotEmpty(message = "姓名必填")
     private String name;
 
@@ -22,12 +22,12 @@ public class OrderForm {
      * 买家手机号
      */
     @NotEmpty(message = "手机号必填")
-    private  String phone;
+    private String phone;
     /*
      * 买家地址
      */
     @NotEmpty(message = "地址必填")
-    private  String address;
+    private String address;
 
     /*
      * 买家微信openid
@@ -35,9 +35,9 @@ public class OrderForm {
     @NotEmpty(message = "openid必填")
     private String openid;
     /*
-    * 买家购物车
-    */
+     * 买家购物车
+     */
     @NotEmpty(message = "购物车不能为空")
-    private  String items;
+    private String items;
 
 }

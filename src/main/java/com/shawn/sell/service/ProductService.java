@@ -11,6 +11,7 @@ import java.util.List;
 
 /**
  * 商品
+ *
  * @Author: Shawn
  * @Date: 2019/2/11 13:52
  */
@@ -20,9 +21,11 @@ public interface ProductService {
 
     /**
      * 查询所有在架商品列表
+     *
      * @return
      */
     List<ProductInfo> findUpAll();
+
     //查询所有
     Page<ProductInfo> findAll(Pageable pageable);
 

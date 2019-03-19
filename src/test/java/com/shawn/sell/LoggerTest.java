@@ -16,9 +16,9 @@ import org.springframework.test.context.junit4.SpringRunner;
 @SpringBootTest
 @Slf4j
 public class LoggerTest {
-  //  private final Logger logger = LoggerFactory.getLogger(LoggerTest.class);
+    //  private final Logger logger = LoggerFactory.getLogger(LoggerTest.class);
     @Test
-    public void test1(){
+    public void test1() {
         log.debug("debug..");
         log.info("info222");
         log.error("error..");

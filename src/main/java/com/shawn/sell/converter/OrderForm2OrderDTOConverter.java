@@ -18,26 +18,27 @@ import java.util.List;
  */
 @Slf4j
 public class OrderForm2OrderDTOConverter {
-    public static OrderDTO convert(OrderForm orderForm){
+    public static OrderDTO convert(OrderForm orderForm) {
         Gson gson = new Gson();  //谷歌的工具转json
         // （因为后面orderForm里面的item是个字符，而传进的是个json）
 
-         OrderDTO orderDTO = new OrderDTO();
+        OrderDTO orderDTO = new OrderDTO();
 
-         orderDTO.setBuyerName(orderForm.getName());
-         orderDTO.setBuyerPhone(orderForm.getPhone());
-         orderDTO.setBuyerAddress(orderForm.getAddress());
-         orderDTO.setBuyerOpenid(orderForm.getOpenid());
+        orderDTO.setBuyerName(orderForm.getName());
+        orderDTO.setBuyerPhone(orderForm.getPhone());
+        orderDTO.setBuyerAddress(orderForm.getAddress());
+        orderDTO.setBuyerOpenid(orderForm.getOpenid());
 
         List<OrderDetail> orderDetailList = new ArrayList<>();
-        try{
-            orderDetailList =  gson.fromJson(orderForm.getItems(),
-                    new TypeToken<List<OrderDetail>>(){}.getType());
-        }catch (Exception e){
-            log.error("【对象转换】错误，string={}",orderForm.getItems());
-            throw  new SellException(ResultEnum.PARAM_ERROR);
+        try {
+            orderDetailList = gson.fromJson(orderForm.getItems(),
+                    new TypeToken<List<OrderDetail>>() {
+                    }.getType());
+        } catch (Exception e) {
+            log.error("【对象转换】错误，string={}", orderForm.getItems());
+            throw new SellException(ResultEnum.PARAM_ERROR);
         }
-         orderDTO.setOrderDetailList(orderDetailList);
+        orderDTO.setOrderDetailList(orderDetailList);
         return orderDTO;
     }
 }
