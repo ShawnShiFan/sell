@@ -39,8 +39,7 @@ public class BuyerServiceImpl implements BuyerService {
         if (orderDTO == null){
             return null;
         }
-        System.out.println(orderDTO.getBuyerOpenid());
-        System.out.println(openid);
+
         //判断是否自己的订单
         if (!orderDTO.getBuyerOpenid().equalsIgnoreCase(openid)){
             log.error("【查询订单】订单的openid不一致.openid={},orderDTO={}",openid,orderDTO);

@@ -21,6 +21,7 @@ import org.springframework.transaction.annotation.Transactional;
 import javax.swing.*;
 
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 import static org.junit.Assert.*;
@@ -44,7 +45,7 @@ public class OrderServiceImplTest {
     @Test
     public void create() {
         OrderDTO orderDTO = new OrderDTO();
-        orderDTO.setBuyerName("凡哥");
+        orderDTO.setBuyerName("测试时间");
         orderDTO.setBuyerAddress("科大");
         orderDTO.setBuyerPhone("1343342423");
         orderDTO.setBuyerOpenid(BUYER_OPENID);
@@ -62,6 +63,9 @@ public class OrderServiceImplTest {
         orderDetailList.add(o1);
         orderDetailList.add(o2);
         orderDTO.setOrderDetailList(orderDetailList);
+        Date date = new Date();
+        orderDTO.setCreateTime(date);
+        orderDTO.setUpdateTime(date);
 
         OrderDTO result = orderService.create(orderDTO);
         log.info("[创建订单] result={}", result);
