@@ -30,16 +30,14 @@ public class WechatController {
     @Autowired
     private WxMpService wxMpService;
 
+
     @GetMapping("/authorize")
-    public String authorize(@RequestParam("returnUrl") String returnUrl){
-
-        //微信API的Service （实现借助api获取code和access_token）
-        //1.配置
-        //2/调用方法
-        String url ="www.shawnshifan.xyz:8080/sell/wechat/userInfo";
-        String redirectUrl =  wxMpService.oauth2buildAuthorizationUrl(url,WxConsts.OAuth2Scope.SNSAPI_USERINFO, URLEncoder.encode(returnUrl));
-        return "redirect" +redirectUrl;
-
+    public String authorize(@RequestParam("returnUrl") String returnUrl) {
+        //1. 配置
+        //2. 调用方法
+        String url = "http://shawnshifan.natapp1.cc/sell/wechat/userInfo";
+        String redirectUrl = wxMpService.oauth2buildAuthorizationUrl(url, WxConsts.OAuth2Scope.SNSAPI_BASE, URLEncoder.encode(returnUrl));
+        return "redirect:" + redirectUrl;
     }
 
     @GetMapping("/userInfo")
@@ -53,9 +51,9 @@ public class WechatController {
             throw  new SellException(ResultEnum.WECHAT_MP_ERROR.getCode(),e.getError().getErrorMsg());
         }
 
-        String openid = wxMpOAuth2AccessToken.getOpenId();
+        String openId = wxMpOAuth2AccessToken.getOpenId();
 
-        return "redirect" +returnUrl+"?openid="+openid;
+        return "redirect:" + returnUrl + "?openid=" + openId;
 
     }
 

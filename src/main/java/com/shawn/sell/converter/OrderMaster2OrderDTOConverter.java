@@ -17,7 +17,6 @@ public class OrderMaster2OrderDTOConverter {
         OrderDTO orderDTO = new OrderDTO();
         BeanUtils.copyProperties(orderMaster, orderDTO);
         return orderDTO;
-
     }
 
     //lambda 返回一个list给orderDto
