@@ -18,4 +18,17 @@ public class WechatAccountConfig {
 
     /**微信appSecret.*/
     private String mpAppSecret;
+
+    /**商户id.*/
+    private String mchId;
+
+    /**商户key.*/
+    private String mchKey;
+
+    /**证书存放路径.*/
+    private String keyPath;
+
+    /** 微信支付异步通知地址*/
+    private String notifyUrl;
+
 }
