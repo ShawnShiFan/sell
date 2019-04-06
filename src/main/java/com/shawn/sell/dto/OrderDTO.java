@@ -1,8 +1,12 @@
 package com.shawn.sell.dto;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import com.shawn.sell.dataobject.OrderDetail;
+import com.shawn.sell.enums.OrderStatusEnum;
+import com.shawn.sell.enums.PayStatusEnum;
+import com.shawn.sell.utils.EnumUtil;
 import com.shawn.sell.utils.serializer.Date2LongSerializer;
 import lombok.Data;
 import java.math.BigDecimal;
@@ -52,5 +56,12 @@ public class OrderDTO {
 
     List<OrderDetail> orderDetailList;
 
-
+    @JsonIgnore   //在转为Json的时候忽略掉因为返回前端的时候不需要这两个
+    public OrderStatusEnum getOrderStatusEnum(){
+        return EnumUtil.getByCode(orderStatus,OrderStatusEnum.class);
+    }
+    @JsonIgnore
+    public PayStatusEnum getPayStatusEnum(){
+        return EnumUtil.getByCode(payStatus,PayStatusEnum.class);
+    }
 }

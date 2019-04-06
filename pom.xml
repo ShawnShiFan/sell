@@ -66,6 +66,12 @@
             <version>1.2.0</version>
         </dependency>
 
+        <!--后台管理前端模板-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-freemarker</artifactId>
+        </dependency>
+
     </dependencies>
 
     <build>
