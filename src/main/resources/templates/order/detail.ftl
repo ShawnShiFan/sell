@@ -1,24 +1,21 @@
 <html>
-<head>
-    <meta charset="utf-8">
-    <title>Shawn卖家订单详情</title>
-    <link href="https://cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="/sell/css/style.css">
-</head>
+<#include "../common/header.ftl">
+<body>
 
 <body>
 <div id="wrapper" class="toggled">
 
 <#--边栏sidebar-->
-<#--    <#include "../common/nav.ftl">-->
+    <#include "../common/nav.ftl">
+
 
 
 <#--主要内容content-->
     <div id="page-content-wrapper">
-        <div class="container">
+        <div class="container-fluid">
             <div class="row clearfix">
                 <div class="col-md-4 column">
-                    <table class="table table-bordered">
+                    <table class="table table-hover table-bordered table-condensed">
                         <thead>
                         <tr>
                             <th>订单id</th>

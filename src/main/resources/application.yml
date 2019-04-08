@@ -18,8 +18,15 @@ server:
 wechat:
   mpAppId: wx2feaada02fb55b5f
   mpAppSecret: 3627038c9661f48e4bcb288594ab74d5
+  openAppId: wx6ad144e54af67d87
+  openAppSecret: 91a2ff6d38a2bbccfb7e9f9079108e2e
   mchId: 137945590x
   mchKey: 0561d7c09b9cc71b00xxxxxxxxxxxx
   keyPath: G:/weixin_cert/apiclient_cert.p12
   notify_url: http://shawnshifan.natapp1.cc/sell/pay/notify
+
+projectUrl:
+  wechatMpAuthorize: http://shawnshifan.natapp1.cc
+  wechatOpenAuthorize: http://shawnshifan.natapp1.cc
+  sell: http://shawnshifan.natapp1.cc
 

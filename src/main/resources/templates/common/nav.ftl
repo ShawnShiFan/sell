@@ -2,7 +2,7 @@
     <ul class="nav sidebar-nav">
         <li class="sidebar-brand">
             <a href="#">
-                Shawn卖家管理系统
+                卖家管理系统
             </a>
         </li>
         <li>
