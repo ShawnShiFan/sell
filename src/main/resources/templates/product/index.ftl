@@ -31,7 +31,7 @@
                         </div>
                         <div class="form-group">
                             <label>图片</label>
-                            <img height="100" width="100" src="${(productInfo.productIcon)!''}" alt="">
+                            <img height="100" width="100" src="${(productInfo.productIcon)!''}" alt="" />
                             <input name="productIcon" type="text" class="form-control" value="${(productInfo.productIcon)!''}"/>
                         </div>
                         <div class="form-group">

@@ -10,9 +10,10 @@ import org.springframework.stereotype.Component;
  * @Version 1.0
  */
 @Data
-@ConfigurationProperties(prefix = "projectUrl")
+@ConfigurationProperties(prefix = "projecturl")
 @Component
 public class ProjectUrlConfig {
+
     /**
      * 微信公众平台授权url
      */

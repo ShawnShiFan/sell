@@ -25,7 +25,7 @@ wechat:
   keyPath: G:/weixin_cert/apiclient_cert.p12
   notify_url: http://shawnshifan.natapp1.cc/sell/pay/notify
 
-projectUrl:
+projecturl:
   wechatMpAuthorize: http://shawnshifan.natapp1.cc
   wechatOpenAuthorize: http://shawnshifan.natapp1.cc
   sell: http://shawnshifan.natapp1.cc
