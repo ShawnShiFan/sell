@@ -20,7 +20,7 @@ import static org.junit.Assert.*;
 @SpringBootTest
 public class SellerServiceImplTest {
     private static final String openid ="abc";
-
+    private static final String username ="admin";
     @Autowired
     private SellerServiceImpl sellerService;
 
@@ -28,5 +28,11 @@ public class SellerServiceImplTest {
     public void findSellerInfoByOpenid() {
         SellerInfo result = sellerService.findSellerInfoByOpenid(openid);
         Assert.assertEquals(openid,result.getOpenid());
+    }
+
+    @Test
+    public void findSellerInfoUsername(){
+        SellerInfo result = sellerService.findSellerInfoByUsername(username);
+        Assert.assertEquals(username,result.getUsername());
     }
 }

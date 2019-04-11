@@ -52,7 +52,7 @@ public class SellerProductController {
 
     @GetMapping("/list")
     public ModelAndView list(@RequestParam(required = false,value="page",defaultValue = "1") Integer page,
-                             @RequestParam(required = false,value = "size",defaultValue = "10") Integer size,
+                             @RequestParam(required = false,value = "size",defaultValue = "6") Integer size,
                              Map<String,Object> map){
 
         PageRequest request =PageRequest.of(page-1,size);
@@ -141,13 +141,15 @@ public class SellerProductController {
             //如果productId为空，说明是新增
             if (!StringUtils.isEmpty(form.getProductId())){
                 productInfo = productService.findById(form.getProductId());
+                form.setCreateTime(productInfo.getCreateTime());
+                form.setUpdateTime(new Date());
             }else {
                 form.setProductId(KeyUtil.genUniqueKey());
                 form.setCreateTime(new Date());
                 form.setUpdateTime(new Date());
             }
-        form.setCreateTime(productInfo.getCreateTime());
-        form.setUpdateTime(new Date());
+
+
         BeanUtils.copyProperties(form,productInfo);
         productService.save(productInfo);
       }catch (SellException e){
