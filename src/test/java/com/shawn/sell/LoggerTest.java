@@ -7,6 +7,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
+import org.springframework.util.DigestUtils;
 
 /**
  * @Author: Shawn
@@ -22,6 +23,10 @@ public class LoggerTest {
         log.debug("debug..");
         log.info("info222");
         log.error("error..");
+    }
 
+    @Test
+    public void test2(){
+        log.info("密码为:"+DigestUtils.md5DigestAsHex("admin".getBytes()));
     }
 }
