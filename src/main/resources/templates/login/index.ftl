@@ -15,11 +15,11 @@
                     <form role="form" method="get" action="/sell/seller/login/index">
                         <div class="form-group">
                             <label>卖家账户</label>
-                            <input name="username" type="text" class="form-control" value="${(sellInfo.username)!''}"/>
+                            <input name="userName" type="text" class="form-control" value="${(sellInfo.username)!''}"/>
                         </div>
                         <div class="form-group">
                             <label>密码</label>
-                            <input name="password" type="text" class="form-control" value="${(sellInfo.password)!''}"/>
+                            <input name="passWord" type="text" class="form-control" value="${(sellInfo.password)!''}"/>
                         </div>
 
                         <button type="submit" class="btn btn-default">登陆</button>
