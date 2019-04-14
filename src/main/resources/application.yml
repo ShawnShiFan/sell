@@ -26,7 +26,7 @@ wechat:
   notify_url: http://shawnshifan.natapp1.cc/sell/pay/notify
 
 projecturl:
-  wechatMpAuthorize: http://shawnshifan.natapp1.cc
+  wechatMpAuthorize: http://www.shawnshifan.xyz:8080
   wechatOpenAuthorize: http://shawnshifan.natapp1.cc
   sell: http://shawnshifan.natapp1.cc
 

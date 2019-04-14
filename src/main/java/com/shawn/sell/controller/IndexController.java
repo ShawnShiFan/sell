@@ -19,7 +19,7 @@ public class IndexController {
     public ModelAndView logout(){
         Map<String, Object> map=new HashMap<>();
         map.put("msg", "注销成功");
-        map.put("url", "http://localhost:8080/sell");
+        map.put("url", "/sell");
         return new ModelAndView("common/success", map);
     }
 }

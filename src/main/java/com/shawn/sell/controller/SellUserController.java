@@ -9,6 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.util.DigestUtils;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
@@ -22,12 +23,12 @@ import java.util.Map;
  * @Version 1.0
  */
 @Controller
-@RequestMapping("/seller/login")
+@RequestMapping("/seller")
 public class SellUserController {
    @Autowired
    private SellerService sellerService;
 
-    @GetMapping("/index")
+    @PostMapping("/login/index")
     public ModelAndView login(@RequestParam("userName") String userName,
                               @RequestParam("passWord") String passWord,
                               Map<String , Object> map){
@@ -35,20 +36,22 @@ public class SellUserController {
        if (sellerInfo==null){
 //           throw new SellException(ResultEnum.SELLER_NOT_EXIST);
            map.put("msg", "卖家账户不存在");
-           map.put("url", "http://localhost:8080/sell");
+           map.put("url", "/sell");
            return new ModelAndView("common/error", map);
        }
        if (sellerInfo.getPassword().equals(DigestUtils.md5DigestAsHex(passWord.getBytes()))){
            map.put("sellerInfo",sellerInfo);
            map.put("msg", ResultEnum.SELLER_LOGIN_SUCCESS.getMessage());
-           map.put("url", "http://localhost:8080/sell/seller/order/list");
+           map.put("url", "/sell/seller/order/list");
            return new ModelAndView("common/success", map);
        }else
            map.put("msg", ResultEnum.SELLER_LOGIN_FAIL.getMessage());
-           map.put("url", "http://localhost:8080/sell");
+           map.put("url", "/sell");
            return new ModelAndView("common/error", map);
 
     }
+
+
 
 
 
