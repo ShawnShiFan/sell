@@ -28,6 +28,7 @@ import org.springframework.util.CollectionUtils;
 import java.math.BigDecimal;
 import java.math.BigInteger;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -79,11 +80,13 @@ public class OrderServiceImpl implements OrderService {
 
         //3.写入订单数据库(orderMaster和orderDetail)
         OrderMaster orderMaster = new OrderMaster();
+        orderDTO.setOrderId(orderId);
         BeanUtils.copyProperties(orderDTO, orderMaster);
-        orderMaster.setOrderId(orderId);
         orderMaster.setOrderAmount(orderAmount);
         orderMaster.setOrderStatus(OrderStatusEnum.NEW.getCode());
         orderMaster.setPayStatus(PayStatusEnum.WAIT.getCode());
+        orderMaster.setCreateTime(new Date());
+        orderMaster.setUpdateTime(new Date());
         orderMasterRepository.save(orderMaster);
         //4.扣库存
         //两种方法，一种是直接写在上面for循环中，另一种是单独拿出来用lambda的方法
@@ -97,9 +100,10 @@ public class OrderServiceImpl implements OrderService {
 
     @Override
     public OrderDTO findById(String orderId) {
-
-        OrderMaster orderMaster = orderMasterRepository.findById(orderId).get();
-        if (orderMaster == null) {
+        OrderMaster orderMaster;
+       if (orderMasterRepository.findById(orderId).isPresent()){
+           orderMaster  = orderMasterRepository.findById(orderId).get();
+       }else{
             throw new SellException(ResultEnum.ORDER_NOT_EXIST);
         }
         List<OrderDetail> orderDetailList = orderDetailRepository.findByOrderId(orderId);
@@ -168,6 +172,10 @@ public class OrderServiceImpl implements OrderService {
         if (!orderDTO.getOrderStatus().equals(OrderStatusEnum.NEW.getCode())) {
             log.error("【完结订单】订单状态不正确，orderId={},orderStatus={}", orderDTO.getOrderId(), orderDTO.getOrderStatus());
             throw new SellException(ResultEnum.ORDER_STATUS_ERROR);
+        }
+        //判断支付状态
+        if (orderDTO.getPayStatus().equals(PayStatusEnum.WAIT.getCode())){
+            log.error("【完结订单】支付状态为等待支付不可完结，只能取消，orderId={},payStatus={}", orderDTO.getOrderId(), orderDTO.getPayStatus());
         }
 
         //修改订单状态

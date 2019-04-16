@@ -26,7 +26,7 @@ public class PayController {
         if (orderDTO == null){
             return ResultEnum.ORDER_NOT_EXIST.getMessage();
         }
-        orderDTO.setPayStatus(PayStatusEnum.SUCCESS.getCode());
+         orderService.paid(orderDTO);
         return PayStatusEnum.SUCCESS.getMessage();
     }
 
