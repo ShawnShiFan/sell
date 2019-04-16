@@ -60,7 +60,8 @@
     </style>
     <script type="text/javascript">
         function Toregister() {
-            window.open("register.ftl")
+           /* window.open("register.html")*/
+
         }
     </script>
 </head>
@@ -145,7 +146,7 @@
                         </div>
                         <div class="footer">
                             <button type="submit" class="btn btn-primary">登陆</button>
-                            <button type="" class="btn btn-secondary" onclick="Toregister()">注册</button>
+                            <button type="button" class="btn btn-secondary" onclick="Toregister()">注册</button>
                             <button type="button" class="btn btn-link"><small>忘记密码？</small></button>
                         </div>
                     </form>
@@ -154,7 +155,7 @@
         </div>
     </div>
     <div class="jumbotron bg-light jumheight2">
-        <p class="footer2">   Designed by Shawn     ©2019Shawn  如有疑问请联系邮箱shawn_shifan@163.com  |  手机13405608660  </p>
+        <p class="footer2">   Designed by Shawn     ©2019Shawn  如有疑问请联系邮箱<a href="https://mail.163.com/">shawn_shifan@163.com</a> |  手机13405608660  </p>
     </div>
 </div>
 </body>
