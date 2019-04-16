@@ -176,6 +176,7 @@ public class OrderServiceImpl implements OrderService {
         //判断支付状态
         if (orderDTO.getPayStatus().equals(PayStatusEnum.WAIT.getCode())){
             log.error("【完结订单】支付状态为等待支付不可完结，只能取消，orderId={},payStatus={}", orderDTO.getOrderId(), orderDTO.getPayStatus());
+            throw  new SellException(ResultEnum.ORDER_STATUS_ERROR);
         }
 
         //修改订单状态
@@ -200,11 +201,11 @@ public class OrderServiceImpl implements OrderService {
             log.error("【订单支付成功】订单状态不正确，orderId={},orderStatus={}", orderDTO.getOrderId(), orderDTO.getOrderStatus());
             throw new SellException(ResultEnum.ORDER_STATUS_ERROR);
         }
-
+         /*若存在货到付款，则在未线上支付状态可以通过，以下判断则不需要*/
         //判断支付状态
         if (!orderDTO.getPayStatus().equals(PayStatusEnum.WAIT.getCode())) {
             log.error("【订单支付完成】订单支付状态不正确，orderDTO={}", orderDTO);
-            throw new SellException(ResultEnum.ORDER_PAY_STATUS_ERROR);
+            /*throw new SellException(ResultEnum.ORDER_PAY_STATUS_ERROR);*/
         }
 
         //修改订单支付状态

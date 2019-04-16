@@ -28,6 +28,7 @@ public enum ResultEnum {
     SELLER_NOT_EXIST(101,"卖家账户不存在"),
     SELLER_LOGIN_SUCCESS(102,"登录成功"),
     SELLER_LOGIN_FAIL(103,"密码错误"),
+
     ;
 
     private Integer code;

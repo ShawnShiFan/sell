@@ -11,10 +11,11 @@ spring:
   jackson:
     default-property-inclusion: non_null
     date-format: yyyy-MM-dd HH:mm:ss
+
+
 server:
   servlet:
     context-path: /sell
-
 
 wechat:
   mpAppId: wx2feaada02fb55b5f
