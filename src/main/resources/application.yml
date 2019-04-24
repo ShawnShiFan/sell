@@ -26,7 +26,8 @@ wechat:
   mchKey: 0561d7c09b9cc71b00xxxxxxxxxxxx
   keyPath: G:/weixin_cert/apiclient_cert.p12
   notify_url: http://shawnshifan.natapp1.cc/sell/pay/notify
-
+  templateId:
+    orderStatus: 1hY-Dfdq98Nql4fweZbgh1r7j3ECiZuZBCR5F7CrptI
 projecturl:
   wechatMpAuthorize: http://www.shawnshifan.xyz:8080
   wechatOpenAuthorize: http://shawnshifan.natapp1.cc
