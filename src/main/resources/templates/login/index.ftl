@@ -60,7 +60,7 @@
     </style>
     <script type="text/javascript">
         function Toregister() {
-           /* window.open("register.html")*/
+            window.open("templates/login/register.html")
 
         }
     </script>
@@ -83,25 +83,25 @@
                 <!-- 轮播图片 -->
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="imgs/foods1.jpg">
+                        <img src="imgs/foods1.jpg" alt="">
                     </div>
                     <div class="carousel-item">
-                        <img src="imgs/foods5.jpg">
+                        <img src="imgs/foods5.jpg" alt="">
                     </div>
                     <div class="carousel-item">
-                        <img src="imgs/foods3.jpg">
+                        <img src="imgs/foods3.jpg" alt="">
                     </div>
                     <div class="carousel-item">
-                        <img src="imgs/foods4.jpg">
+                        <img src="imgs/foods4.jpg" alt="">
                     </div>
                     <div class="carousel-item">
-                        <img src="imgs/foods6.jpg">
+                        <img src="imgs/foods6.jpg" alt="">
                     </div>
                     <div class="carousel-item">
-                        <img src="imgs/foods7.jpg">
+                        <img src="imgs/foods7.jpg" alt="">
                     </div>
                     <div class="carousel-item">
-                        <img src="imgs/foods8.jpg">
+                        <img src="imgs/foods8.jpg" alt="">
                     </div>
                 </div>
                 <!-- 左右切换按钮 -->
@@ -146,8 +146,8 @@
                         </div>
                         <div class="footer">
                             <button type="submit" class="btn btn-primary">登陆</button>
-                            <button type="button" class="btn btn-secondary" onclick="Toregister()">注册</button>
-                            <button type="button" class="btn btn-link"><small>忘记密码？</small></button>
+                          <#--  <button type="button" class="btn btn-secondary" onclick="Toregister()">注册</button>
+                            <button type="button" class="btn btn-link"><small>忘记密码？</small></button>-->
                         </div>
                     </form>
                 </div>

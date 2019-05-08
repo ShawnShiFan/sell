@@ -111,16 +111,20 @@
         <div class="signup-page">
             <form>
                 <h3>
-                   注 册 用 户
+                    Sign up with Email
                 </h3>
                 <p class="slogan">
-                   加入我们，开始点餐之旅
+                    Join us, start working
                 </p>
                 <div class="input-prepend">
                     <span class="glyphicon glyphicon-user"></span>
                     <input type="text" placeholder="用户名">
                 </div>
                 <br>
+                <div class="input-prepend">
+                    <span class="glyphicon glyphicon-envelope"></span>
+                    <input type="text" placeholder="Email">
+                </div>
                 <br>
                 <div class="input-prepend">
                     <span class="glyphicon glyphicon-lock"></span>
